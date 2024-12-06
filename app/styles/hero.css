@@ -1,0 +1,56 @@
+.heroSection {
+  position: relative;
+  background-image: url('../public/images/pic.jpeg'); /* Replace with the actual image path */
+  background-size: cover; /* This makes the image cover the whole section */
+  background-position: center center; /* This centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  height: 100vh; /* Makes the section take up the full viewport height */
+  color: #fff; /* Adjust text color to make it readable over the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heroSection .container {
+  z-index: 1; /* Ensures the content appears above the background */
+}
+
+.header {
+  max-width: 800px; /* Limit the width of the header */
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color:white
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

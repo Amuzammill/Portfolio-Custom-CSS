@@ -1,0 +1,31 @@
+/* Footer.module.css */
+
+/* Footer container styling */
+.footer {
+    background-image: url('../public/images/download2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    color: white;
+    display: grid;
+    place-content: center;
+  }
+  
+  /* Content styling */
+  .content {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .footer {
+      height: 150px;
+      background-position: top;
+    }
+  
+    .content {
+      font-size: 0.875rem;
+    }
+  }
+  

@@ -1,0 +1,77 @@
+/* Container for the entire section */
+.whatIDo-container {
+  padding: 64px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #2d3748;
+  margin-top: 2rem;
+}
+
+/* Section Heading */
+.whatIDo-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+/* Grid layout for services */
+.whatIDo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .whatIDo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual service card */
+.whatIDo-card {
+  background-color: #f7fafc;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.whatIDo-card:hover {
+  transform: scale(1.05);
+}
+
+/* Icon styling */
+.whatIDo-icon {
+  font-size: 2rem;
+  color: #4299e1;
+  margin-bottom: 1rem;
+}
+
+/* Service title */
+.whatIDo-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Service description */
+.whatIDo-description {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+/* Link for each service */
+.whatIDo-link {
+  font-size: 1rem;
+  color: #4299e1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.whatIDo-link:hover {
+  text-decoration: underline;
+}

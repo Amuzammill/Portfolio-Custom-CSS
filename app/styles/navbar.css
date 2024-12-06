@@ -1,0 +1,133 @@
+/* Navbar Container */
+.navbar {
+    background-color: black;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Desktop Links */
+.navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    margin-top: 0.5rem;
+}
+
+.link:hover {
+    color: #0070f3;
+}
+
+/* Download Button */
+.downloadButton {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #0070f3;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.downloadButton .icon {
+    margin-left: 5px;
+    color:#fff;
+    display: flex;
+}
+
+.downloadButton:hover {
+    background-color: #005bb5;
+}
+
+/* Hamburger Menu Button */
+.menuButton {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobileMenu {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    max-width: 250px;
+    background-color: #1f2937;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileMenu.open {
+    transform: translateX(0);
+}
+
+.mobileLink, .mobileDownloadButton {
+    color: #d1d5db;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #374151;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.mobileDownloadButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0070f3;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.mobileLink:hover, .mobileDownloadButton:hover {
+    color: #60a5fa;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navLinks, .downloadButton {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+    }
+}
